@@ -1,0 +1,92 @@
+* { /*resetando configurações - é sempre bom fazer esses resets*/
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /*para a medida da caixa começar a partir das bordas*/
+}
+
+:root {
+  font-size: 62.5%; /*resetando  tamanho da fonte*/
+}
+
+body {
+  background: linear-gradient(107.56deg, #C2E9FB 0%, #A1C4FD 100%); /*deg é a angulação do degrade, 0% é a cor inicial do degrade e 100% é a cor final*/
+  font-size: 1.6rem;
+  display: grid; /*forma de organização dos itens do container*/
+  place-items: center; /*para deixar a caixa bem centralizada ao meio*/
+  height: 100vh; /*importante aumentar o tamanho da altura do body para a caixa ficar centralizada no eixo vertical*/
+}
+
+body, button, input {
+  font-family: "DM Sans", sans-serif; 
+}
+
+button {
+  background-color: #7879F1;
+  color: white;
+  font-weight: bold;
+  border-radius: 0 0.4rem 0.4rem 0; /*arredondando as bordas somente nos cantos*/
+  cursor: pointer; /*para aparecer a mão do mouse*/
+  transition: background-color 1s; /*para a transição com o hover ocorre suavemente*/
+}
+
+button:hover { /*quando passar o mouse os comandos abaixo serão executados*/
+  background-color: #8d8dcc;
+}
+
+.hide {
+  display: none; /*display:none retira o elemento do layout da página - mas você ainda pode continuar manipulando ele no DOM - vai ser feito uma manipulação no JS para as janelas alternarem*/
+}
+
+main {
+  background: #FFFFFF;
+  box-shadow: 0 0.2rem 0.4rem rgba(0, 0, 0, 0.1); /*especificando valores da sombra - eixo x, y, grau do borrar, cor*/
+  border-radius: 0.6rem; /*deixar as pontas arredondadas*/
+  padding: 4.8rem 6.4rem 6.4rem; /*preechimento interno*/
+  width: min(42.8rem, 90%); /*o mínimo da largura vai ficar entre os dois valores especificados*/
+  margin-top: -12rem; /*subindo um pouco a caixa*/
+  text-align: center; /*comando para colocar os textos no centro*/
+}
+
+/*screen1 - aqui é o "miolo" da primeira janela*/
+
+h1 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 2.4rem;
+  margin-bottom: 1.6rem;
+}
+
+h1, p {
+  color: #34355B;
+}
+
+p {
+  opacity: 0.8;
+}
+
+form {
+  margin-top: 4.8rem;
+  display: flex; /*para tirar a separação entre o input e o button nos lados*/
+  justify-content: center; /*para alinhar os itens ao meio*/
+}
+
+input, button {
+  border: none; /*tirando a borda*/
+  padding: 1.6rem;
+}
+
+input {
+  background-color: #DCE2E9;
+  width: 6.5rem;
+  border-radius: 0.4rem 0 0 0.4rem; /*arredondando as bordas somente do canto*/
+}
+
+/*screen2 - aqui é o "miolo" da segunda janela*/
+h2 {
+  font-size: 2.4rem;
+  font-weight: normal;
+  margin-bottom: 3.3rem;
+}
+
+.screen2 button {
+  border-radius: 0.4rem;
+}

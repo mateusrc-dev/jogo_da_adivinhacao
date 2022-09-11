@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jogo Adivinhação</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Montserrat:wght@600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <main>
+    <div class="screen1">
+      <h1>Jogo da adivinhação</h1>
+      <p>Adivinhe um número entre 0 e 10</p>
+      <form> <!--tag para colocar formulários - vamos enviar dados-->
+        <input id="inputNumber" type="number"> <!--colocar o espaço para digitar um texto-->
+        <button id="btnTry">Tentar</button> <!--botão para enviar dados - o onclick executa uma função no JS ao button ser clicado (foi colocado o nome dessa função entre as aspas) - colocando event como argumento para que a página não seja recarregada ao clicar no button--> 
+      </form>
+    </div>
+    <div class="screen2 hide"> <!--com o JS nós vamos fazer o screen1 sumir para aparecer o screen2-->
+      <h2>Acertou em 3 vezes</h2>
+      <button id="btnReset">Jogar novamente</button>
+    </div>
+  </main>
+  <script src="./main.js"></script> <!--adicionando o javascript na página - é importante ficar no final para fazer a DOM, pois todos as tags acima já foram lidas-->
+</body>
+</html>
+
